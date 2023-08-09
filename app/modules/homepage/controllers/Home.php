@@ -26,6 +26,8 @@ class Home extends FC_Controller{
 		}
 
         $data['slide_ads_home'] = $this->FrontendSlides_Model->Read('adversite-1',$this->fc_lang);
+
+        $data['slide_customer_home'] = $this->FrontendSlides_Model->Read('customer-review',$this->fc_lang);
 //		echo "<pre>";print_r($data['slide_ads_home']);die();
 
 		/* -------------------------- */

@@ -242,51 +242,16 @@
     </section>
 
     <!-- Ủng hộ khách hàng -->
-    <section class="container-2019">
-        <div class="hacom-customer">
-            <div class="hacom-customer-img-fix">
+    <section class="container-customer-review">
+        <div class="namhacompu-customer">
+            <div class="namhacompu-customer-img-fix">
                 <img class="lazy loaded" data-src="https://hanoicomputercdn.com/media/lib/08-05-2023/demopink-1.png" src="https://prnt.sc/A6LYTkmiTn1T" alt="Khách Hàng Hacom" width="1" height="1" style="width: auto;height: auto;" data-was-processed="true">
             </div>
-            <div class="wrap-hacom-customer">
-                <div class="hacom-customer-title">Sự ủng hộ của khách hàng khắp mọi miền đất nước</div>
+            <div class="wrap-namhacompu-customer">
+                <div class="namhacompu-customer-title">Sự ủng hộ của khách hàng khắp mọi miền đất nước</div>
 
-                <div id="js-footer-customer-container" class="loaded">
-                    <div class="owl-carousel owl-theme hacom-customer-slider owl-loaded owl-drag">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage" style="transform: translate3d(-41755px, 0px, 0px); transition: all 0.4s ease 0s; width: 85897px;">
-                                <div class="owl-item cloned" style="width: 387.667px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="" target="_blank">
-                                            <img class="owl-lazy" data-src="https://hanoicomputercdn.com/media/banner/09_Junf82229d75b685c4ca6148c161cfc65d7.jpg" alt="" width="2048" height="1365">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 387.667px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="" target="_blank">
-                                            <img class="owl-lazy" data-src="https://hanoicomputercdn.com/media/banner/09_Junfab2fa26066782277e15835e3bc5ed09.jpg" alt="" width="2048" height="1365">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 387.667px; margin-right: 10px;">
-                                    <div class="item">
-                                        <a href="" target="_blank">
-                                            <img class="owl-lazy" data-src="https://hanoicomputercdn.com/media/banner/06_June4551c0c17cad5f7631485fe0d2c88ff.jpg" alt="" width="2479" height="2048">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-nav">
-                            <button type="button" role="presentation" class="owl-prev">
-                                <i class="far fa-chevron-left"></i>
-                            </button>
-                            <button type="button" role="presentation" class="owl-next">
-                                <i class="far fa-chevron-right" style="margin-left:2px;"></i>
-                            </button>
-                        </div>
-                        <div class="owl-dots disabled"></div>
-                    </div>
+                <div class="slider-customer">
+                    <?php $this->load->view('homepage/frontend/common/slider') ?>
                 </div>
             </div>
         </div>
@@ -324,5 +289,55 @@
         transform: rotateX(0deg) !important;
         visibility: visible !important;
         transition: unset !important;
+    }
+
+    @media (min-width: 1650px) {
+        .container-customer-review {
+            width: 1650px;
+        }
+    }
+
+    .container-customer-review{
+        width: 1200px;
+        max-width: 100%;
+        padding: 0 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .namhacompu-customer {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: stretch;
+    }
+
+    .namhacompu-customer .namhacompu-customer-img-fix {
+        width: 25%;
+        margin-right: 10px;
+        background-color: #FBD2D3;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .namhacompu-customer .wrap-namhacompu-customer {
+        width: 75%;
+        background-color: #FBD2D3;
+        padding: 0 20px 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+    }
+
+    .namhacompu-customer .wrap-namhacompu-customer .namhacompu-customer-title {
+        font-size: 28px;
+        text-align: center;
+        font-weight: 600;
+        color: #2D2C74;
+        padding: 10px 0 20px;
+        text-transform: uppercase;
     }
 </style>
